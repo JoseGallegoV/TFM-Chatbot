@@ -26,4 +26,64 @@ El objetivo de este proyecto es crear una herramienta que facilite la extracció
 
 **Control de Creatividad:** Ajuste de la temperatura del modelo para controlar el nivel de creatividad de las respuestas generadas.
 
-## Instalación
+## Instalación y Uso
+
+### Requisitos
+
+Asegúrate de tener instalados los siguientes requisitos previos:
+
+- Python 3.10.12
+- pip (Python package installer)
+- Git (para clonar el repositorio, opcional)
+
+### Clonación del repositorio
+
+Primero, clona este repositorio en tu máquina local (opcional si ya descargaste el código):
+
+```
+git clone https://github.com/JoseGallegoV/TFM-Chatbot.git
+cd TFM-Chatbot
+```
+
+### Creación de entorno virtual
+
+Se recomienda crear un entorno virtual para aislar las dependencias del proyecto. Si no tienes instalado venv, puedes hacerlo con:
+
+```
+pip install virtualenv
+```
+
+A continuación, puedes crear un entorno virtual con los siguientes comandos:
+
+```
+python -m venv [nombre del entorno]
+source [nombre del entorno]/bin/activate  # En Windows usa `[nombre del entorno]\Scripts\activate`
+```
+
+### Instalación de dependencias
+
+Instala las dependencias necesarias usando `pip`:
+
+```
+pip install -r requirements.txt
+```
+
+### Preparación de datos
+
+Antes de ejecutar la aplicación, debes preparar los datos. Coloca tus archivos PDF en el directorio `data/docs`. Puedes utilizar los archivos PDF de prueba incluidos o reemplazarlos por cualquier PDF en español.
+
+Ejecuta el script `subir_data_chroma.py` para crear la base de datos ChromaDB:
+
+```
+python src/subir_data_chroma.py
+```
+
+### Ejecución de la aplicación
+
+Una vez que la base de datos ChromaDB esté creada, puedes ejecutar la aplicación:
+
+```
+python src/app.py
+```
+
+Luego, abre tu navegador web y navega a `http://127.0.0.1:7860` para usar el chatbot.
