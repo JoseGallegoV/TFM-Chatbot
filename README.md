@@ -8,47 +8,22 @@ El objetivo de este proyecto es crear una herramienta que facilite la extracció
 
 ## Tecnologías Utilizadas
 
-LangChain: Herramienta para la gestión de cadenas de procesamiento de lenguaje natural.
+**LangChain:** Herramienta para la gestión de cadenas de procesamiento de lenguaje natural.
 
-GPT (Generative Pre-trained Transformer): Modelo de lenguaje avanzado desarrollado por OpenAI.
+**GPT (Generative Pre-trained Transformer):** Modelo de lenguaje avanzado desarrollado por OpenAI.
 
-Gradio: Plataforma para la creación de interfaces de usuario interactivas.
+**Gradio:** Plataforma para la creación de interfaces de usuario interactivas.
 
-ChromaDB: Base de datos vectorial para el almacenamiento y recuperación eficiente de información.
+**ChromaDB:** Base de datos vectorial para el almacenamiento y recuperación eficiente de información.
 
 ## Funcionalidades
 
-    Lectura y Procesamiento de PDFs: Un script que lee y procesa documentos PDF, separando su contenido en bloques de texto manejables.
-    Generación de Respuestas: Integración de LangChain y GPT para generar respuestas basadas en el contenido de los PDFs.
-    Interfaz de Usuario: Desarrollo de una interfaz interactiva con Gradio para formular preguntas y recibir respuestas en tiempo real.
-    Control de Creatividad: Ajuste de la temperatura del modelo para controlar el nivel de creatividad de las respuestas generadas.
+**Lectura y Procesamiento de PDFs:** Un script que lee y procesa documentos PDF, separando su contenido en bloques de texto manejables.
 
-Instalación
+**Generación de Respuestas:** Integración de LangChain y GPT para generar respuestas basadas en el contenido de los PDFs.
 
-    Clona este repositorio:
+**Interfaz de Usuario:** Desarrollo de una interfaz interactiva con Gradio para formular preguntas y recibir respuestas en tiempo real.
 
-    bash
+**Control de Creatividad:** Ajuste de la temperatura del modelo para controlar el nivel de creatividad de las respuestas generadas.
 
-git clone https://github.com/tu_usuario/chatbot-pdf.git
-
-Navega al directorio del proyecto:
-
-bash
-
-cd chatbot-pdf
-
-Instala las dependencias:
-
-bash
-
-    pip install -r requirements.txt
-
-Uso
-
-    Ejecuta el script principal:
-
-    bash
-
-python app.py
-
-Abre el navegador y accede a la interfaz en http://localhost:7860.
+## Instalación
