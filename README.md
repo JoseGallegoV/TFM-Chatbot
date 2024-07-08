@@ -68,6 +68,14 @@ Instala las dependencias necesarias usando `pip`:
 pip install -r requirements.txt
 ```
 
+### Configuración de la clave de API de OpenAI
+
+Antes de utilizar la aplicación, necesitas crear un archivo .env en el directorio raíz del proyecto y añadir tu clave de API de OpenAI. Crea el archivo .env con el siguiente contenido:
+
+```
+OPENAI_API_KEY="tu_clave_de_openai_aqui"
+```
+
 ### Preparación de datos
 
 Antes de ejecutar la aplicación, debes preparar los datos. Coloca tus archivos PDF en el directorio `data/docs`. Puedes utilizar los archivos PDF de prueba incluidos o reemplazarlos por cualquier PDF en español.
