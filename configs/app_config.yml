@@ -1,0 +1,38 @@
+directorios:
+  directorio_datos: data/docs
+  directorio_database: data/vectordb/processed/chroma/
+
+configuracion_modelo_embedding:
+  motor: "text-embedding-ada-002"
+
+configuracion_llm:
+    rol_sistema_llm: "Eres un chatbot. Vas a recibir información que incluye la conversación histórica del chat, el contenido obtenido de la vectordb en función de la pregunta del usuario, y la fuente.\
+    Tu tarea es responder la nueva pregunta del usuario usando la información de la vectordb sin utilizar tu propio conocimiento.\
+    Vas a recibir un mensaje con este formato:
+
+    # Historial de chat:\n
+    [pregunta usuario, respuesta]\n\n
+
+    # Número de contenido recuperado:\n
+    Contenido\n\n
+    Fuente\n\n
+
+    # Nueva pregunta del usuario:\n
+    Nueva pregunta
+    "
+    motor: "gpt-3.5-turbo"
+    temperatura: 0.0
+    maximos_tokens: 4096
+
+configuracion_splitter:
+  tamaño_fragmento: 1500
+  solapamiento_fragmento: 500
+
+configuracion_recuperacion:
+  k: 3
+
+servidor:
+  puerto: 8000
+
+memoria:
+  numero_de_pares_pregunta_respuesta: 2
